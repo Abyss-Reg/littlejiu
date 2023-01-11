@@ -37,9 +37,9 @@ function card_out(){
     if(rm.style.bottom == "-100%" || iconlip.childElementCount == 1){
         return;
     }
-    window.setTimeout(function(){
-        document.getElementById("som").style.opacity = "0";
-    },300)
+    //window.setTimeout(function(){
+        //document.getElementById("som").style.opacity = "0";
+    //},300)
     rm.style.bottom = "-100%";
     window.setTimeout(function(){
         iconlip.removeChild(rm);
