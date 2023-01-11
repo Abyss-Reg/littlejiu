@@ -26,9 +26,9 @@ function card_in(){
     window.setTimeout(function(){
         name.style.bottom = "calc(50px - 14px)";
     },600)
-    window.setTimeout(function(){
-        document.getElementById("som").style.opacity = "1";
-    },500) 
+    //window.setTimeout(function(){
+        //document.getElementById("som").style.opacity = "1";
+    //},500) 
 }
 
 function card_out(){
