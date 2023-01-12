@@ -80,7 +80,7 @@ body{
     bottom:0;
     /*background-color: aqua;*/
     height: 40px;
-    width: 500px;
+    width: 100%;
     display:block;
     justify-content: center;
     font-size: 1px;
