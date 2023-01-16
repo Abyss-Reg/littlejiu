@@ -83,11 +83,14 @@ body::-webkit-scrollbar{
     width: 100px;
     height: 100px;
     /*background-color: #fe9719;*/
+    
+    /*
     transition: width 0.3s;
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
+    */
+    position: relative;
     overflow: hidden;
 }
 
