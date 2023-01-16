@@ -10,7 +10,15 @@
     <link rel="shortcut icon" href="./img/loge-T.png" type="image/x-icon">
 </head>
 <body>
-    <div class="card">
+    <div class="top">
+        <div class="headl" id="home" onclick="homec()">
+            <span>主页</span>
+        </div>
+        <div class="headl" id="flink" onclick="flinkc()">
+            <span>友链</span>
+        </div>
+    </div>
+    <div class="card" style="left: 0%" id="dccard">
         <div class="conn" onmouseenter="card_in()" onmouseout="card_out()">
             <div class="iconlip">
                 <div class="icon" id="icon" style="left:0;">
@@ -29,15 +37,42 @@
 
         </div>
     </div>
+    <div class="card2" id="flcard" style="left:calc(100% - 25%/2 - 75%)">
+        <div class="flsom">
+            <div class="tip">
+                <p>这些网站也不错哦</p>
+            </div>
+            <!--新添加的网站请在这里填写-->
+            <div class="linkbord">
+                <div class="linkcard">
+                    <div class="siteimg">
+                        <a href="https://www.furrybbs.net" class="inter">
+                            <img src="https://www.furrybbs.net/data/assets/logo/Logo123.png">
+                        </a>
+                    </div>
+                    <div class="sitename">
+                        <span>
+                            <a href="https://www.furrybbs.net" class="inter">FurLibrary</a>
+                        </span>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
     <div class="foot">
         <p><b>使用移动设备浏览可能出现排版错误，技术有限，非常抱歉</b></p>
         <p>Copyright © 2023 - 2024 狐小九Little_Jiu 版权所有</p>
     </div>
     <script>
         (function(){
-            window.setTimeout(function(){
+            window.setTimeout(()=>{
+                document.getElementById("home").click();
+            },50)
+            /*window.setTimeout(function(){
                 document.getElementById("som").style.opacity = "1";
-            },1000);
+            },1000);*/
         })();
     </script>
 </body>

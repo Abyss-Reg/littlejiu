@@ -3,6 +3,10 @@
     src: url("../font/SmileySans-Oblique.ttf"),url("../font/SmileySans-Oblique.otf"),url("../font/SmileySans-Oblique.otf.woff2"),url("../font/SmileySans-Oblique.ttf.woff2");
 }
 
+*{
+    --font--:"SmileySans-Oblique";
+}
+
 body{
     background-color: #fe9719;
     background-image:linear-gradient(to right top,#ecce7d,#fe9719);
@@ -18,6 +22,34 @@ body{
     box-sizing: border-box;
 }
 
+.top{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    min-height: 40px;
+    max-height: 55px;
+    height: 8%;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.headl{
+    height: 40px;
+    /*box-shadow: 5px 5px 5px rgba(0,0,0,.8);*/
+    transition: box-shadow 0.3s;
+    background-color: #8ffe19;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: var(--font--);
+}
+
 body::-webkit-scrollbar{
     width: 0px;
     background-color: gray;
@@ -25,6 +57,8 @@ body::-webkit-scrollbar{
 
 .card{
     background-color: rgba(255,255,255,.7);
+    position: relative;
+    transition: left 0.5s;
     height: 75%;
     width: 75%;
     border-radius: 15px;
@@ -127,3 +161,112 @@ body::-webkit-scrollbar{
     height: 25px;
     vertical-align:text-bottom;
 }
+
+.card2{
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    transition: left 0.5s;
+    height: 75%;
+    width: 75%;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: -1;
+}
+
+.flsom{
+    /*background-color:#fe9719;*/
+    position: relative;
+    width: 100%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    font-family:"SmileySans-Oblique" ;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.flsom::-webkit-scrollbar{
+    width: 0px;
+    background-color: gray;
+}
+
+.tip{
+    margin-top: 15px;
+    width: auto;
+    height: 40px;
+    /*background-color: #fe9719;*/
+    transition: width 0.3s;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.linkbord{
+    /*background-color:aqua;*/
+    width: 100%;
+    margin-top: 10px;
+    height:calc(100% - 75px);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+    font-size: 20px;
+    font-family:"SmileySans-Oblique" ;
+}
+
+.linkbord::-webkit-scrollbar{
+    width: 0px;
+    background-color: gray;
+}
+
+.linkcard{
+    width: 50%;
+    height: 125px;
+    /*background-color: aquamarine;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteimg{
+    width: auto;
+    max-width: 50px;
+    max-height: 50px;
+    height: auto;
+    /*background-color: blue;*/
+    overflow: hidden;
+
+}
+
+.siteimg img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sitename{
+    margin-left: 5px;
+    width: auto;
+    max-width: calc(100% - 85px);
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 28px;
+    /*background-color: #fe9719;*/
+    white-space:nowrap
+}
+
+.sitename::-webkit-scrollbar{
+    height: 0px;
+}
+
