@@ -76,7 +76,7 @@ body::-webkit-scrollbar{
     flex-wrap: wrap;
     justify-content: center;
     overflow-y: auto;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
 }
 
