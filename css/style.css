@@ -39,7 +39,7 @@ body{
     height: 40px;
     /*box-shadow: 5px 5px 5px rgba(0,0,0,.8);*/
     transition: box-shadow 0.3s;
-    background-color: #8ffe19;
+    /*background-color: #8ffe19;*/
     width: 70px;
     display: flex;
     align-items: center;
