@@ -43,6 +43,7 @@ function card_in(){
         var name = document.createElement("div");
         window.setTimeout(function(){        
             name.className = "name";
+            name.id = "namebar";
             name.style.bottom = "-100%";
             name.innerHTML = "<span>狐小九Little_Jiu</span>";
             name_and_ico.appendChild(name);
@@ -60,7 +61,6 @@ function card_out(){
     }
     if(document.getElementById("dccard").offsetWidth < 450){
         var rm = document.getElementById("namebar");
-        console.log("运行到此处");
         iconlip.style.height = "100px";
         window.setTimeout(()=>{
             iconlip.style["transition"] = "unset";

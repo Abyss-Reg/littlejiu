@@ -75,7 +75,12 @@ body::-webkit-scrollbar{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: auto;
 
+}
+
+.conn::-webkit-scrollbar{
+    width: 0px;
 }
 
 .iconlip{
