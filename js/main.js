@@ -94,7 +94,9 @@ function card_out(){
 function homec(){
     var dccard = document.getElementById("dccard");
     document.getElementById("flink").style.boxShadow = "unset";
-    document.getElementById("home").style.boxShadow = "7px 5px 5px rgba(0,0,0,.8)"
+    document.getElementById("home").style.backgroundColor = "rgba(255,255,255,.4)";
+    document.getElementById("flink").style.backgroundColor = "unset";
+    document.getElementById("home").style.boxShadow = "7px 5px 5px rgba(0,0,0,.8)";
     document.getElementById("flcard").style.zIndex = "-1";
     document.getElementById("flcard").style.opacity = "0";
     //删除所有定时器
@@ -115,7 +117,9 @@ function homec(){
 function flinkc(){
     var dccard = document.getElementById("dccard");
     document.getElementById("home").style.boxShadow = "unset";
-    document.getElementById("flink").style.boxShadow = "7px 5px 5px rgba(0,0,0,.8)"
+    document.getElementById("home").style.backgroundColor = "unset";
+    document.getElementById("flink").style.backgroundColor = "rgba(255,255,255,.4)";
+    document.getElementById("flink").style.boxShadow = "7px 5px 5px rgba(0,0,0,.8)";
     dccard.style.left = "-100%";
     window.setTimeout(()=>{
         card_out();
