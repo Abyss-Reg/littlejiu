@@ -6,18 +6,21 @@ import math as m
 def Dec2Bin(num:int,totalLen:int)->list:
     n = num
     ret = []
-    while(n != 0):                                      q = n % 2
+    while(n != 0):
+        q = n % 2
         n = int(n/2)
         ret.append(q)
     if(len(ret)<totalLen):
         for i in range(totalLen - len(ret)):
-            ret.append(0)                           return ret
+            ret.append(0)
+    return ret
 
 
-# 拼组幂集                                      def GetResult(o:list)->list:
+# 拼组幂集
+def GetResult(o:list)->list:
     oLength = len(o)
     oResultLen = int(m.pow(2,oLength))
-    totalLen = len(Dec2Bin(oResultLen,0))           # 不补0，获得列表应有的位数
+    totalLen = len(Dec2Bin(oResultLen,0)) # 不补0，获得列表应有的位数
     ret = []
     for a in range(oResultLen):
         oIndex = Dec2Bin(a,totalLen)
